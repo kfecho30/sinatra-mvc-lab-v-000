@@ -8,7 +8,7 @@ class PigLatinizer
     words = text.split(" ")
     words.each do |word|
       binding.pry
-      word.split("").find(/[aeiou]/).index
+      word.scan(/[aeiou]/)
       #from beginning of word, find first vowel and take all consonants before then
       #add that chunk to the end of the word plus "ay"
     end
